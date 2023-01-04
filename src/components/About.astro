@@ -1,0 +1,31 @@
+---
+import { Image } from "@astrojs/image/components";
+---
+
+<section class="pl-5 mt-[2rem] md:mt-[3rem] md:flex">
+  <div class="md:w-[700px]">
+    <h3 class="text-[1.8rem] md:text-[2rem]">Elimika Kidigitali.</h3>
+    <article class="pt-3 tracking-wider md:text-[1.1rem]">
+      Mafanikio yanahitaji kujifunza pasipo na kikomo. Chui ni jukwaa mahususi
+      la kukupa maarifa ya kukuwezesha kupiga hatua kitaalamu na katika maisha
+      yako binafsi. Pakua programu ya Chui leo kujenga ujuzi katika mada
+      mbalimbali kama ujasiriamali, biashara, uchumi, burudani, teknolojia,
+      urembo, ufugaji na nyingine nyingi zaidi. Chota maarifa kutoka kwa
+      wataalamu waliofanikiwa zaidi katika fani zao.
+    </article>
+  </div>
+
+  <div
+    class="w-[300px] h-[200px] md:w-[646px] md:h-[300px] pt-7 shadow-md md:shadow-none"
+  >
+    <Image
+      src="/hero.png"
+      alt="Hero Picture"
+      width={350}
+      height={400}
+      aspectRatio={16 / 9}
+      format="png"
+      fit="cover"
+    />
+  </div>
+</section>

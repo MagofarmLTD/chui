@@ -1,0 +1,30 @@
+---
+import Card from "./Card.astro";
+---
+
+<section class="pl-5">
+  <div class="flex flex-col mt-[12rem] md:mt-[6rem] font-regular">
+    <h3 class="text-[2rem]">Zaidi na</h3>
+    <p class="text-[2.4rem]">Chui Academy.</p>
+  </div>
+  <div class="flex flex-col mt-[1.5rem] md:flex-row md:mt-[2rem]">
+    <Card
+      inx={1}
+      textColor="text-white"
+      caption="Maudhui wasilianifu: kujumuisha mambo kama vile video na maswali."
+      bg="bg-blue"
+    />
+    <Card
+      inx={2}
+      textColor="text-cyan"
+      caption="Kufuatilia na kuripoti: ikijumuisha alama za maswali na tathmini nyinginezo, pamoja na muda  uliotumika kwenye jukwaa."
+      bg="bg-[#071322]"
+    />
+    <Card
+      inx={3}
+      textColor="text-white"
+      caption="Zana za ushirikiano na mawasiliano: kama vile vikao vya majadiliano, ujumbe, na saa za ofisi pepe."
+      bg="bg-blue"
+    />
+  </div>
+</section>

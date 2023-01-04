@@ -1,0 +1,26 @@
+---
+import { Image } from "@astrojs/image/components";
+---
+
+<section class="pl-5 mt-[2rem] md:mt-[3rem] md:flex">
+  <div class="md:w-[600px]">
+    <h3 class="text-2xl md:text-3xl font-medium">Faidika Nasi</h3>
+    <article class="tracking-wide mt-3">
+      Chota maarifa kutoka kwa wataalamu waliofanikiwa zaidi katika fani zao.
+      Andaa maisha yako ya baadaye kwa mafunzo ya mtandaoni ambayo hutoa ustadi
+      wa kiutendaji, wa kitaalam na katika maisha binafsi. Karibu ujifunze nasi,
+      kidigitali zaidi.
+    </article>
+  </div>
+  <div class="w-[300px] h-[150px] mt-[1.5rem] md:w-[646px] md:h-[300px]">
+    <Image
+      src="/hero2.png"
+      alt="Hero Picture"
+      width={350}
+      height={400}
+      aspectRatio={16 / 9}
+      format="png"
+      fit="cover"
+    />
+  </div>
+</section>
