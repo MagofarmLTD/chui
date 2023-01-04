@@ -28,17 +28,21 @@ import { Image } from "@astrojs/image/components";
         <p class="font-medium text-[2.4rem] md:text-[3.2rem]">Chui Academy.</p>
       </div>
 
-      <div class="w-[200px] h-[100px] cursor-pointer">
-        <Image
-          src="/google.png"
-          alt="Hero Picture"
-          width={646}
-          height={250}
-          aspectRatio={16 / 9}
-          format="png"
-          fit="cover"
-        />
-      </div>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.magofarm.mobivet&pli=1"
+      >
+        <div class="w-[200px] h-[100px] cursor-pointer">
+          <Image
+            src="/google.png"
+            alt="Hero Picture"
+            width={646}
+            height={250}
+            aspectRatio={16 / 9}
+            format="png"
+            fit="cover"
+          />
+        </div>
+      </a>
     </div>
     <div class="w-[200px] h-[400px] mt-5 md:mt-0 mb-[30px]">
       <Image
