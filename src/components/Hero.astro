@@ -24,10 +24,10 @@ import { Image } from "@astrojs/image/components";
   >
     <div>
       <div class="flex flex-col text-white">
-        <h3 class="font-regular text-[2.8rem] md:text-[4.3rem] text-[#d8e6ed]">
+        <h3 class="font-regular text-[2.8rem] md:text-[5rem] text-[#d8e6ed]">
           Piga hatua na
         </h3>
-        <p class="font-medium text-[3rem] md:text-[3.6rem]">Chui Academy.</p>
+        <p class="font-medium text-[3rem] md:text-[6rem]">Chui Academy.</p>
       </div>
 
       <div class="w-[250px] h-[100px] cursor-pointer">
@@ -46,9 +46,13 @@ import { Image } from "@astrojs/image/components";
         </a>
       </div>
     </div>
-    <div class="w-[200px] h-[400px] md:w-[230px] md:mt-0">
+    <div class="w-[200px] h-[400px] md:w-[230px] z-10 md:mt-0 relative">
+      <div
+        class="h-[350px] w-[350px] -right-5 bg-cyan blur-3xl top-[20%] rounded-full absolute z-[-1] hidden md:block"
+      >
+      </div>
       <Image
-        src="/phone.png"
+        src="/hero3.png"
         alt="Hero Picture"
         width={300}
         height={612}

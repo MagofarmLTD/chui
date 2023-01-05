@@ -1,13 +1,11 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image, Picture } from "@astrojs/image/components";
 ---
 
 <section class="md:flex md:items-center md:justify-center">
-  <section
-    class="pl-5 mt-[2rem] md:mt-[3rem] md:flex md:items-center md:justify-around"
-  >
+  <section class="pl- mt-[2rem] md:mt-[3rem] md:flex md:justify-between">
     <div class="md:w-[700px]">
-      <h3 class="text-[2.2rem] md:text-[2.5rem]">Elimika Kidigitali.</h3>
+      <h3 class="text-[2.2rem] md:text-[3.5rem]">Elimika Kidigitali.</h3>
       <article class="pt-3 tracking-wider text-[1.1rem] md:text-[1.2rem]">
         Mafanikio yanahitaji kujifunza pasipo na kikomo. Chui ni jukwaa mahususi
         la kukupa maarifa ya kukuwezesha kupiga hatua kitaalamu na katika maisha
@@ -18,8 +16,10 @@ import { Image } from "@astrojs/image/components";
       </article>
     </div>
 
-    <div class="w-[350px] h-[600px] md:h-[350px] pt-7 md:pl-[2rem]">
-      <Image
+    <div
+      class="w-[350px] h-[400px] md:w-[500px] md:h-[400px] pt-7 md:pl-[2rem]"
+    >
+      <!-- <Image
         src="/hero.png"
         alt="Hero Picture"
         width={500}
@@ -28,7 +28,17 @@ import { Image } from "@astrojs/image/components";
         aspectRatio="16:9"
         fit="cover"
         class="object-cover"
-      />
+      /> -->
+
+      <img src="/hero.png" class="object-cover" alt="hero-img" />
+
+      <!-- <Picture
+        src={heroImage}
+        widths={[400, 500, 600]}
+        aspectRatio="4:3"
+        alt="Local Image"
+        sizes="(max-width: 600px) 300px, 500px"
+      /> -->
     </div>
   </section>
 </section>
