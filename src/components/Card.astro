@@ -10,12 +10,14 @@ const { inx, caption, textColor, bg } = Astro.props;
 ---
 
 <div
-  class={`${bg} w-[300px] h-[180px] md:h-[200px] flex flex-col justify-center pl-5 rounded-md`}
+  class={`${bg} w-[300px] h-[180px] md:w-[450px] md:h-[270px] flex flex-col justify-center pl-5 rounded-md md:rounded-none`}
 >
   <div
     class="w-[40px] h-[40px] bg-cyan text-white rounded-full flex items-center justify-center font-medium"
   >
     <p>0{inx}</p>
   </div>
-  <article class={`${textColor} pt-3 md:text-[0.9rem] `}>{caption}</article>
+  <article class={`${textColor} pt-3 md:text-[1.2rem]  `}>
+    {caption}
+  </article>
 </div>
