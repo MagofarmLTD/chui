@@ -1,0 +1,75 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { Image } from "@astrojs/image/components";
+const date = new Date().getFullYear();
+
+export interface Props {
+  content: {
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+    heroImage?: string;
+  };
+}
+
+const {
+  content: { title, description, pubDate, updatedDate, heroImage },
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+    <style>
+      .title {
+        font-size: 2em;
+        margin: 0.25em 0 0;
+      }
+      hr {
+        border-top: 1px solid #ddd;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="flex items-center pt-[2rem] pl-5">
+      <div class="w-[50px] h-[50px]">
+        <Image
+          src="/chui.png"
+          width={60}
+          height={60}
+          alt="logo"
+          aspectRatio={16 / 9}
+          format="png"
+          fit="cover"
+        />
+      </div>
+      <h3 class="text-lg tracking-wider uppercase font-medium pl-2">
+        Chui Academy
+      </h3>
+    </nav>
+    <main
+      class="font-montserrat mx-auto container max-w-sm md:max-w-[60ch] mt-[5em]"
+    >
+      <article accesskey="mx-auto flex flex-col items-center justify-center">
+        {heroImage && <img width={320} height={260} src={heroImage} alt="" />}
+        <h1 class="title">{title}</h1>
+        {pubDate && <time>{pubDate}</time>}
+        {
+          updatedDate && (
+            <div>
+              Last updated on <time>{updatedDate}</time>
+            </div>
+          )
+        }
+        <hr />
+        <slot />
+      </article>
+    </main>
+    <footer class="mt-[2rem] text-center md:text-lg font-medium">
+      All Right Reserved {date} Chui Academy.
+    </footer>
+  </body>
+</html>
