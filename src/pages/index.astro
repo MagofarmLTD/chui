@@ -5,7 +5,7 @@ import Faidika from "../components/Faidika.astro";
 import Hero from "../components/Hero.astro";
 import Value from "../components/Value.astro";
 import Reviews from "../components/Reviews.astro";
-const date = new Date().getFullYear();
+import Mawasiliano from "../components/Mawasiliano.astro";
 ---
 
 <Layout title="Chui Academy">
@@ -14,7 +14,5 @@ const date = new Date().getFullYear();
   <Value />
   <Reviews />
   <Faidika />
-  <footer class="md:mt-[9rem] mt-[12rem] text-center">
-    All Right Reserved {date} Chui Academy.
-  </footer>
+  <Mawasiliano />
 </Layout>

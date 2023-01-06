@@ -6,7 +6,7 @@ import { Image } from "@astrojs/image/components";
   <nav class="flex items-center pt-[2rem]">
     <div class="w-[50px] h-[50px]">
       <Image
-        src="/logo.png"
+        src="/chui.png"
         width={60}
         height={60}
         alt="logo"
@@ -15,7 +15,7 @@ import { Image } from "@astrojs/image/components";
         fit="cover"
       />
     </div>
-    <h3 class="text-lg tracking-wider uppercase text-white font-medium">
+    <h3 class="text-lg tracking-wider uppercase text-white font-medium pl-5">
       Chui Academy
     </h3>
   </nav>
@@ -30,20 +30,38 @@ import { Image } from "@astrojs/image/components";
         <p class="font-medium text-[3rem] md:text-[6rem]">Chui Academy.</p>
       </div>
 
-      <div class="w-[250px] h-[100px] cursor-pointer">
-        <a
-          href="https://play.google.com/store/apps/details?id=com.magofarm.mobivet&pli=1"
-        >
-          <Image
-            src="/google.png"
-            alt="Hero Picture"
-            width={646}
-            height={250}
-            aspectRatio={16 / 9}
-            format="png"
-            fit="cover"
-          />
-        </a>
+      <div class="md:flex">
+        <div class="w-[290px] mx-[-15px] md:mx-0 h-[100px] cursor-pointer">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.magofarm.mobivet&pli=1"
+          >
+            <Image
+              src="/google.png"
+              alt="Hero Picture"
+              width={800}
+              height={300}
+              aspectRatio={16 / 9}
+              format="png"
+              fit="cover"
+            />
+          </a>
+        </div>
+
+        <div class="w-[250px] h-[90px] cursor-pointer md:mt-[15px]">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.magofarm.mobivet&pli=1"
+          >
+            <Image
+              src="/epo.png"
+              alt="Hero Picture"
+              width={646}
+              height={200}
+              aspectRatio={16 / 9}
+              format="png"
+              fit="cover"
+            />
+          </a>
+        </div>
       </div>
     </div>
     <div class="w-[200px] h-[400px] md:w-[230px] z-10 md:mt-0 relative">

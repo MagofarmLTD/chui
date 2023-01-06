@@ -1,0 +1,59 @@
+---
+import { Image } from "@astrojs/image/components";
+const date = new Date().getFullYear();
+---
+
+<section class="mt-[2rem] md:mt-[6rem]">
+  <div class="flex flex-col items-center justify-center">
+    <h3 class="text-center text-lg md:text-[1.4rem]">
+      Pata Mawasiliano yetu ndani ya barua pepe yako kwa kuweka Email yako hapa
+      chini.
+    </h3>
+    <form>
+      <div class="flex flex-col gap-3 mt-5 md:w-[400px]">
+        <input
+          type="email"
+          required
+          placeholder="juma342@gmail.com"
+          class="focus:outline-none text-gray-700 border-[2px] border-blue rounded-sm px-2 py-1 md:py-2 md:rounded-md"
+        />
+
+        <button
+          type="submit"
+          class="bg-cyan px-4 py-2 md:py-3 rounded-md cursor-pointer font-medium text-lg text-white"
+          >Jiandikishe</button
+        >
+      </div>
+    </form>
+
+    <div
+      class="flex flex-col md:flex-row items-center justify-center md:justify-between bg-cyan w-full mt-[2rem] text-gray-900 md:px-5 md:mt-[4rem]"
+    >
+      <div class="flex items-center pt-[2rem]">
+        <div class="w-[50px] h-[50px]">
+          <Image
+            src="/chui.png"
+            width={60}
+            height={60}
+            alt="logo"
+            aspectRatio={16 / 9}
+            format="png"
+            fit="cover"
+          />
+        </div>
+        <h3 class="text-lg tracking-wider uppercase font-medium pl-5">
+          Chui Academy
+        </h3>
+        <h3 class="text-center text-[1.2rem] font-medium md:pl-2">
+          Dar es Salaam, Tanzania
+        </h3>
+      </div>
+
+      <div>
+        <footer class="mt-[2rem] text-center md:text-lg font-medium">
+          All Right Reserved {date} Chui Academy.
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
