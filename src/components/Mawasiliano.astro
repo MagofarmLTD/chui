@@ -1,21 +1,27 @@
 ---
 import { Image } from "@astrojs/image/components";
 const date = new Date().getFullYear();
+const autoResponse =
+  "Thank you for Contacting Shamba Data, a member of our team will contact you soon and schedule a meeting to further discuss this";
 ---
 
 <section class="mt-[4rem] md:mt-[6rem]">
   <div class="flex flex-col items-center justify-center">
-    <h3 class="text-center text-lg md:text-[1.4rem]">
+    <h3
+      class="text-center text-lg md:text-[1.4rem] md:w-[700px] md:tracking-wider"
+    >
       Pata Mawasiliano yetu ndani ya barua pepe yako kwa kuweka Email yako hapa
       chini.
     </h3>
-    <form>
+
+    <form action="https://formsubmit.co/mkatala@magofarm.co.rw" method="POST">
       <div class="flex flex-col gap-3 mt-5 md:w-[400px]">
         <input
           type="email"
           required
           placeholder="juma342@gmail.com"
-          class="focus:outline-none text-gray-700 border-[2px] border-blue rounded-sm px-2 py-1 md:py-2 md:rounded-md"
+          name="email"
+          class="focus:outline-none text-gray-700 border-[1px] border-blue rounded-md px-2 py-1 md:py-2 md:rounded-md"
         />
 
         <button
@@ -23,13 +29,20 @@ const date = new Date().getFullYear();
           class="bg-cyan px-4 py-2 md:py-3 rounded-md cursor-pointer font-medium text-lg text-white"
           >Jiandikishe</button
         >
+        <input
+          type="hidden"
+          name="_next"
+          value="https://chui-sand.vercel.app"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_autoresponse" value={autoResponse} />
       </div>
     </form>
 
     <div
-      class="flex flex-col md:flex-row items-center justify-center md:justify-between bg-cyan w-full mt-[2rem] text-gray-900 md:px-5 md:mt-[4rem]"
+      class="flex flex-col md:flex-row items-center justify-center md:justify-between bg-cyan w-full mt-[2rem] text-gray-900 md:px-5 md:mt-[4rem] md:py-2"
     >
-      <div class="flex flex-col md:flex-row items-center pt-[2rem]">
+      <div class="flex flex-col md:flex-row items-center pt-[2rem] md:pt-0">
         <div class="w-[50px] h-[50px]">
           <Image
             src="/chui.png"
@@ -50,7 +63,7 @@ const date = new Date().getFullYear();
       </div>
 
       <div>
-        <footer class="mt-[2rem] text-center md:text-lg font-medium">
+        <footer class="mt-[2rem] md:mt-0 text-center md:text-lg font-medium">
           All Right Reserved {date} Chui Academy.
         </footer>
       </div>
