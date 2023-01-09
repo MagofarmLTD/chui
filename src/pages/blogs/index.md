@@ -3,7 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "One Laptop Per Child Project"
 description: ""
 updatedDate: "December 10 2022"
-heroImage: "/chui.png"
+heroImage: "https://images.unsplash.com/photo-1673205194019-55ac9f0a0899?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60.jpg"
 ---
 
 The "One Laptop per Child" project is a non-profit organization that aims to provide children in developing countries with access to modern technology and education. The organization believes that providing children with laptops will help bridge the digital divide and give them the opportunity to learn and explore the world around them.

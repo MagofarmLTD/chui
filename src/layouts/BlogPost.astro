@@ -54,7 +54,17 @@ const {
       class="font-montserrat mx-auto container max-w-sm md:max-w-[60ch] mt-[5em]"
     >
       <article accesskey="mx-auto flex flex-col items-center justify-center">
-        {heroImage && <img width={320} height={260} src={heroImage} alt="" />}
+        {
+          heroImage && (
+            <img
+              width={320}
+              height={260}
+              src={heroImage}
+              alt=""
+              class="object-cover rounded-md md:w-[700px] md:h-[300px]"
+            />
+          )
+        }
         <h1 class="title">{title}</h1>
         {pubDate && <time>{pubDate}</time>}
         {
