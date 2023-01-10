@@ -2,31 +2,31 @@
 import { Image } from "@astrojs/image/components";
 const date = new Date().getFullYear();
 const autoResponse =
-  "Thank you for Contacting Shamba Data, a member of our team will contact you soon and schedule a meeting to further discuss this";
+  "Thank you for Contacting Chui Academy, a member from our team will contact you soon.";
 ---
 
-<section class="mt-[4rem] md:mt-[6rem]">
+<section class="mt-[4rem] md:mt-[10rem] bg-cyan" id="mawasiliano">
   <div class="flex flex-col items-center justify-center">
     <h3
-      class="text-center text-lg md:text-[1.4rem] md:w-[700px] md:tracking-wider"
+      class="text-center text-lg md:text-[1.4rem] md:w-[700px] md:tracking-wider pt-5 text-white"
     >
       Pata Mawasiliano yetu ndani ya barua pepe yako kwa kuweka Email yako hapa
       chini.
     </h3>
 
-    <form action="https://formsubmit.co/mkatala@magofarm.co.rw" method="POST">
+    <form action="https://formsubmit.co/chui@magofarm.co.rw" method="POST">
       <div class="flex flex-col gap-3 mt-5 md:w-[400px]">
         <input
           type="email"
           required
           placeholder="juma342@gmail.com"
           name="email"
-          class="focus:outline-none text-gray-700 border-[1px] border-blue rounded-md px-2 py-1 md:py-2 md:rounded-md"
+          class="focus:outline-none text-gray-700 rounded-md px-3 py-3 md:py-2 md:rounded-md"
         />
 
         <button
           type="submit"
-          class="bg-cyan px-4 py-2 md:py-3 rounded-md cursor-pointer font-medium text-lg text-white"
+          class="bg-blue px-4 py-2 md:py-3 rounded-md cursor-pointer font-medium text-lg text-white"
           >Jiandikishe</button
         >
         <input
@@ -40,7 +40,7 @@ const autoResponse =
     </form>
 
     <div
-      class="flex flex-col md:flex-row items-center justify-center md:justify-between bg-cyan w-full mt-[2rem] text-gray-900 md:px-5 md:mt-[4rem] md:py-2"
+      class="flex flex-col md:flex-row items-center justify-center md:justify-between w-full mt-[2rem] text-gray-900 md:px-5 md:mt-[4rem] md:py-2"
     >
       <div class="flex flex-col md:flex-row items-center pt-[2rem] md:pt-0">
         <div class="w-[50px] h-[50px]">
@@ -52,6 +52,7 @@ const autoResponse =
             aspectRatio={16 / 9}
             format="png"
             fit="cover"
+            draggable={false}
           />
         </div>
         <h3 class="text-lg tracking-wider uppercase font-medium pl-5">
@@ -63,7 +64,7 @@ const autoResponse =
       </div>
 
       <div>
-        <footer class="mt-[2rem] md:mt-0 text-center md:text-lg font-medium">
+        <footer class="mt-5 md:mt-0 text-center md:text-lg font-medium">
           All Right Reserved {date} Chui Academy.
         </footer>
       </div>

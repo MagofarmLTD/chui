@@ -1,10 +1,8 @@
----
-import { Image } from "@astrojs/image/components";
----
-
-<section class="pl-5 mt-[2rem] md:mt-[3.5rem] md:flex md:items-center">
+<section
+  class="pl-5 mt-[2rem] md:mt-[3.5rem] md:flex md:items-center md:justify-center"
+>
   <section class="md:flex md:justify-between">
-    <div class="md:w-[600px] md:pl-[4rem]">
+    <div class="md:w-[600px]">
       <h3 class="text-[3rem] md:text-[3.5rem]">Faidika Nasi</h3>
       <article class="text-lg tracking-wider mt-3 md:text-[1.2rem]">
         Chota maarifa kutoka kwa wataalamu waliofanikiwa zaidi katika fani zao.
@@ -14,7 +12,7 @@ import { Image } from "@astrojs/image/components";
       </article>
     </div>
     <div
-      class="w-[350px] h-[400px] md:w-[500px] md:h-[400px] pt-7 md:pl-[5rem]"
+      class="w-[350px] h-[400px] md:w-[600px] md:h-[400px] pt-7 md:pl-[5rem]"
     >
       <!-- <Image
         src="/hero2.png"
@@ -25,7 +23,12 @@ import { Image } from "@astrojs/image/components";
         format="png"
         fit="cover"
       /> -->
-      <img src="/hero2.png" class="object-cover" alt="hero-img" />
+      <img
+        src="/hero2.png"
+        class="object-cover"
+        alt="hero-img"
+        draggable="false"
+      />
     </div>
   </section>
 </section>
