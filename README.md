@@ -1,14 +1,8 @@
-# Welcome to [Astro](https://astro.build)
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
+## mychui.net website Code base
 
 ## 🚀 Project Structure
+
+NB: This is basically normal HTML files, ignore the `.astro` extensions. Astro is just a framework that makes you ship better HTML to your users
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -18,7 +12,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── YourComponents.asto
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
@@ -26,25 +20,24 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The components are self explanatory and they are named after what it contains. You can check what component is about by reffering to `pages/index.astro` where the components are imported there.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+There's nothing special about `src/components/`, but there's one file which uses React for the interactivity. which is `Nav.tsx`. Nothing crazy there. It should be able to get you moving.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+Also your blogs are in`pages/blogs/index.md` the md extension makes you easier to write your content. Just write your content there as if you're on google docs and it will be rendered well in pure HTML.
+
+Styling uses TailwindCSS which is the same thing as CSS but better. You can check the website if you want to change the styles
+
+## 🧞 Commands to run on your local machine
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
+| Command        | Action                                      |
+| :------------- | :------------------------------------------ |
+| `git clone`    | Cloning this repo                           |
+| `pnpm install` | Installs dependencies                       |
+| `pnpm run dev` | Starts local dev server at `localhost:3000` |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 👀 Cheers
